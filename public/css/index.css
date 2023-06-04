@@ -131,12 +131,14 @@
   border: 20px dashed black;
   background-image: url('/img/img-400x200.jpg');
   box-sizing: border-box;
+  background-clip: border-box;
 }
 
 .task26 {
   background-image: url('/img/img-400x200.jpg');
   border: 20px dashed black;
   box-sizing: border-box;
+  background-clip: padding-box;
 }
 
 .task27 {
@@ -144,6 +146,7 @@
   font-size: 120px;
   font-weight: 900;
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 .task28 {
@@ -151,6 +154,7 @@
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
+  background-origin: border-box;
 }
 
 .task29 {
@@ -159,6 +163,7 @@
   border: 20px dashed black;
   padding: 20px;
   background-repeat: no-repeat;
+  background-origin: padding-box;
 }
 
 .task30 {
@@ -169,18 +174,30 @@
   font-size: 100px;
   font-weight: 900;
   padding: 60px;
+  background-origin: content-box;
 }
 
 .task31 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border-image-source: linear-gradient(
+    0deg,
+    green 0%,
+    blue 100%
+  );
 }
 
 .task32 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border-image-source: linear-gradient(
+    135deg,
+    red 5%,
+    green 15%,
+    blue 60%
+  );
 }
 
 .task33 {
@@ -188,4 +205,5 @@
   box-sizing: border-box;
   border-image-width: 40px;
   border-image-slice: 10;
+  border-image-repeat: round;
 }
